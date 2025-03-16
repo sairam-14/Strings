@@ -1,0 +1,26 @@
+package com.string;
+
+import java.util.Scanner;
+
+public class Sumof_Stringdigits {
+
+	public static void main(String[] args) {
+      
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter the String");
+		String s=sc.next();
+		int sum=0;
+		
+		for (int i = 0; i <=s.length()-1; i++) {
+			char ch =s.charAt(i);
+			if(ch>='0'&&ch<='9') {
+				
+				int digit=Integer.parseInt(ch+"");
+				sum=sum+digit;
+				
+			}
+			
+		}
+		System.out.println(sum);
+	}
+}
