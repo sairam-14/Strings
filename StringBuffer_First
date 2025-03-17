@@ -1,0 +1,16 @@
+package com.string;
+
+public class Stringbuffer_First {
+
+	public static void main(String[] args) {
+
+		StringBuffer s1 =new StringBuffer("Sairam");
+		StringBuffer s2 =new StringBuffer("Sairam");
+		System.out.println(s1);//to string method is overrided
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));//equals not override in string buffer
+		System.out.println(s1.reverse());
+		System.out.println(s1);//reverse method will effect on memory
+	}
+
+}
