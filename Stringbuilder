@@ -1,0 +1,11 @@
+package com.string;
+
+public class Stringbuilderfirst {
+
+	public static void main(String[] args) {
+
+		StringBuilder s =new StringBuilder("sairam");
+		System.out.println(s.append(s));//sairam sairam
+	}
+
+}
